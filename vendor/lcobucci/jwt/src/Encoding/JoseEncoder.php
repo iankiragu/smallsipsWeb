@@ -6,17 +6,18 @@ namespace Lcobucci\JWT\Encoding;
 use JsonException;
 use Lcobucci\JWT\Decoder;
 use Lcobucci\JWT\Encoder;
-use SodiumException;
 
+use function base64_decode;
+use function base64_encode;
+use function is_string;
 use function json_decode;
 use function json_encode;
-use function sodium_base642bin;
-use function sodium_bin2base64;
+use function rtrim;
+use function strtr;
 
 use const JSON_THROW_ON_ERROR;
 use const JSON_UNESCAPED_SLASHES;
 use const JSON_UNESCAPED_UNICODE;
-use const SODIUM_BASE64_VARIANT_URLSAFE_NO_PADDING;
 
 /**
  * A utilitarian class that encodes and decodes data according with JOSE specifications
@@ -47,15 +48,18 @@ final class JoseEncoder implements Encoder, Decoder
 
     public function base64UrlEncode(string $data): string
     {
-        return sodium_bin2base64($data, SODIUM_BASE64_VARIANT_URLSAFE_NO_PADDING);
+        return rtrim(strtr(base64_encode($data), '+/', '-_'), '=');
     }
 
     public function base64UrlDecode(string $data): string
     {
-        try {
-            return sodium_base642bin($data, SODIUM_BASE64_VARIANT_URLSAFE_NO_PADDING, '');
-        } catch (SodiumException $sodiumException) {
-            throw CannotDecodeContent::invalidBase64String($sodiumException);
+        // Padding isn't added back because it isn't strictly necessary for decoding with PHP
+        $decodedContent = base64_decode(strtr($data, '-_', '+/'), true);
+
+        if (! is_string($decodedContent)) {
+            throw CannotDecodeContent::invalidBase64String();
         }
+
+        return $decodedContent;
     }
 }
