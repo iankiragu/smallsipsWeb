@@ -18,10 +18,10 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 //Authentication APIs
-Route::post('login', 'API\UserController@login');
-Route::post('register', 'API\UserController@register');
+Route::post('login', 'Api\UserController@login');
+Route::post('register', 'Api\UserController@register');
 Route::group(['middleware' => 'auth:api'], function(){
-    Route::post('details', 'API\UserController@details');
+    Route::post('details', 'Api\UserController@details');
 });
 
 //Facilities
@@ -34,11 +34,11 @@ Route::get('/get_services','Api\BackendApiController@get_services');
 Route::get('/get_doctors_json', 'Api\BackendApiController@get_doctors');
 
 //Hospitals
-Route::get('/get_hospitals', 'API\BackendApiController@get_hospitals');
+Route::get('/get_hospitals', 'Api\BackendApiController@get_hospitals');
 
-Route::post('/process_appointments', 'API\BackendApiController@process_appointments');
+Route::post('/process_appointments', 'Api\BackendApiController@process_appointments');
 
 //Hospitals
-Route::post('get_appointments', 'API\BackendApiController@get_appointments');
+Route::post('get_appointments', 'Api\BackendApiController@get_appointments');
 
 
