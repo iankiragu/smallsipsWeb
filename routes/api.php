@@ -34,7 +34,7 @@ Route::get('/get_services','Api\BackendApiController@get_services');
 Route::get('/get_doctors_json', 'Api\BackendApiController@get_doctors');
 
 //Hospitals
-Route::get('/get_hospitals', 'App\Http\Controllers\Api\BackendApiController@get_hospitals');
+Route::get('/get_hospitals', 'Api\BackendApiController@get_hospitals');
 
 Route::post('/process_appointments', 'Api\BackendApiController@process_appointments');
 
