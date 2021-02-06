@@ -136,6 +136,25 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/mime-type-detection" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/http-client-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/lcobucci/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/4b" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/5c" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/6a" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/6b" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/08" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/9a" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/33" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/44" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/53" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/63" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/85" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/b4" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/b8" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/bd" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/c1" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/c2" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/db" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/df" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/f4" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

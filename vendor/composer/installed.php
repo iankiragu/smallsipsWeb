@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '9316ab168ec4db6acc3ecdd37c0b5ba21667d271',
+    'reference' => 'b85007b92c363f6ff3c4ac7bfef4b3eda18cbffc',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -494,7 +494,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '9316ab168ec4db6acc3ecdd37c0b5ba21667d271',
+      'reference' => 'b85007b92c363f6ff3c4ac7bfef4b3eda18cbffc',
     ),
     'laravel/passport' => 
     array (
