@@ -1,4 +1,4 @@
-<h2>Tribore Health Web Application</h2>
+<h2>Small sips  Web Application</h2>
 <p>To get started follow the steps below</p>
 Make sure you have sql installed in your pc as well as node.
 
